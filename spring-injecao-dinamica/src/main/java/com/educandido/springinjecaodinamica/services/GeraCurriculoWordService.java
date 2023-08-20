@@ -7,4 +7,8 @@ import org.springframework.stereotype.Service;
 @Service
 @Qualifier("GeraCurriculoWordService")
 public class GeraCurriculoWordService implements GeraCurriculo {
+    @Override
+    public String getTipoArquivo() {
+        return "WORD";
+    }
 }

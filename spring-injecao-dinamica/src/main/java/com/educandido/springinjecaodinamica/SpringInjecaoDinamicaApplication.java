@@ -13,7 +13,7 @@ public class SpringInjecaoDinamicaApplication {
 	@Bean
 	public CommandLineRunner executar(@Autowired CurriculoService curriculoService){
 		return args -> {
-			System.out.println("Gera Curriculo");
+			System.out.println(curriculoService.getCurriculo("WORD"));
 		};
 	}
 

@@ -7,4 +7,8 @@ import org.springframework.stereotype.Service;
 @Service
 @Qualifier("GeraCurriculoPdfService")
 public class GeraCurriculoPdfService implements GeraCurriculo {
+    @Override
+    public String getTipoArquivo() {
+        return "PDF";
+    }
 }
